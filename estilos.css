@@ -63,8 +63,12 @@ a {
 }
 
 .button:hover {
-    color: #222;
     background-color: var(--destaque);
+}
+
+.button a:hover {
+    font-weight: 300;
+    color: #222;
 }
 
 /* Estilo Mobile */
@@ -103,7 +107,7 @@ a {
 .frase-chorao {
     margin: 10px 0 0 0;
     background-color: var(--secundaria);
-    padding: 30px 0;
+    padding: 30px 0 40px 0;
 }
 
 .frase-chorao blockquote, .frase-chorao cite{
@@ -131,12 +135,12 @@ a {
 }
 
 .bio {
-    padding-bottom: 40px;
+    padding-bottom: 35px;
 }
 
 .bio figure {
     grid-column: 1/9;
-    margin-bottom: 29px;
+    margin-bottom: 20px;
     overflow: hidden;
 }
 
@@ -147,6 +151,10 @@ a {
 .bio p{
     margin: 0 10px;
     grid-column: 1/9;
+}
+
+.bio p:last-child {
+    margin-top: 20px;
 }
 
 .redes-cbjr {
@@ -187,14 +195,14 @@ a {
 }
 
 #footer {
-    padding: 60px 0 0px 0;
+    padding: 70px 0 0px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 #footer .button {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     font-size: 1.2em;
     padding: 10px 15px;
 }
@@ -229,14 +237,16 @@ a {
 }
 
 .subir-topo {
-    margin-right: 5px;
-    position: absolute;
-    bottom: -2790px;
+    margin-right: 10px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
 }
 
 .subir-topo a, .subir-topo p{
     text-align: center;
-    grid-column: 8/9;
     font-weight: bold;
 }
 
@@ -247,14 +257,6 @@ a {
 
 .subir-topo a {
     font-size: .9em;
-}
-
-.subir-topo img {
-    width: 35px;
-    border: aqua;
-    background-color: var(--destaque);
-    border-radius: 20px;
-    padding: 4px;
 }
 
 
