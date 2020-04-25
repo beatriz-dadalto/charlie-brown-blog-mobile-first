@@ -1,9 +1,20 @@
 /* variaveis */
 :root {
-    --primaria: #112731;
+    /* --primaria: #112731;
     --destaque: #f16c4b;
     --texto: #c6fff8;
-    --titulo: #2ec0af;
+    --titulo: #2ec0af; */
+
+    /* --primaria: #2c2a4a;
+    --destaque: #7fdeff;
+    --texto: #eee1ff;
+    --titulo: #7fdeff; */
+
+    --primaria: #5603ad;
+    --secundaria: #4b0082;
+    --destaque: #c2f8cb;
+    --texto: #f0fff1;
+    --titulo: #c2f8cb;
 }
 
 /* reset */
@@ -28,10 +39,6 @@ body {
     overflow-x: hidden;
 }
 
-.redes-sociais-bia img {
-    width: 40px;
-}
-
 /* fonts */
 h1,h2,h3,h4 {
     color: var(--titulo);
@@ -45,22 +52,10 @@ a {
     color: var(--destaque);
 }
 
-/* h1 {
-    font-size: 1.2em;
-}
-
-h2 {
-   font-size: 1.6em;
-}
-
-h3,h4 {
-    font-size: 1.1em;
-} */
-
 .button {
     background-color: none;
     border: 2px solid var(--destaque);
-    border-radius: 20px;
+    border-radius: 8px;
     padding: 6px 12px;
     text-transform: uppercase;
     box-shadow: 1px 2px 3px rgba(0,0,0,.6);
@@ -78,7 +73,6 @@ h3,h4 {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     gap: 10px;
-    margin: 0 20px;
 }
 
 #header {
@@ -86,30 +80,44 @@ h3,h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--secundaria);
 }
 
 #header h1 {
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
-#header h2 {
-    margin-top: 10px;
+#header div h2 {
+    text-align: center;
+}
+
+.decoracao {
+    margin: 12px auto;
+    width: 60px;
+    height: 4px;
+    background-color:var(--destaque);
 }
 
 .frase-chorao {
-    width: 80%;
-    margin-top: 30px;
+    margin: 10px 0 0 0;
+    background-color: var(--secundaria);
+    padding: 30px 0;
 }
 
-.frase-chorao blockquote {
+.frase-chorao blockquote, .frase-chorao cite{
+    grid-column: 1/9;
     text-align: center;
+    font-style: italic;
 }
 
 .frase-chorao cite {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     font-size: 1.1em;
+    text-transform: uppercase;
+    padding-top: 12px;
 }
 
 .top-nav ul {
@@ -123,16 +131,29 @@ h3,h4 {
 }
 
 .bio {
-    margin-top: 60px;
-    margin-bottom: 20px;
+    padding-bottom: 40px;
+}
+
+.bio figure {
+    grid-column: 1/9;
+    margin-bottom: 29px;
+    overflow: hidden;
+}
+
+.bio figure figcaption {
+    display: none;
 }
 
 .bio p{
+    margin: 0 10px;
     grid-column: 1/9;
 }
 
 .redes-cbjr {
-    margin-bottom: 60px;
+    grid-column: 1/9;
+    margin-bottom: 40px;
+    background-color: var(--secundaria);
+    padding: 20px 0;
 }
 
 .redes-cbjr ul {
@@ -147,7 +168,13 @@ h3,h4 {
 }
 
 .discografia {
+    margin-bottom: 40px;
+}
 
+.discografia h3 {
+    text-align: center;
+    font-size: 1.6em;
+    padding: 0 0 40px 0;
 }
 
 .albuns a {
@@ -156,7 +183,78 @@ h3,h4 {
 }
 
 .albuns img {
-    width: 150px;
+    width: 130px;
+}
+
+#footer {
+    padding: 60px 0 0px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer .button {
+    margin-bottom: 40px;
+    font-size: 1.2em;
+    padding: 10px 15px;
+}
+
+#footer h4 {
+    font-size: 1.4em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.redes-sociais-bia {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#footer > h5 {
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    background-color: var(--secundaria);
+}
+
+.redes-sociais-bia img {
+    border:var(--destaque) solid 3px;
+    border-radius: 10px;
+    padding: 8px 8px 6px 8px;
+    width: 60px;
+    margin: 0 12px;
+}
+
+.subir-topo {
+    margin-right: 5px;
+    position: absolute;
+    bottom: -2790px;
+}
+
+.subir-topo a, .subir-topo p{
+    text-align: center;
+    grid-column: 8/9;
+    font-weight: bold;
+}
+
+.subir-topo p {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.subir-topo a {
+    font-size: .9em;
+}
+
+.subir-topo img {
+    width: 35px;
+    border: aqua;
+    background-color: var(--destaque);
+    border-radius: 20px;
+    padding: 4px;
 }
 
 
