@@ -18,7 +18,8 @@
 
 #### E como ficou o resultado final, Bia?
 
+<br>
+
 [Quero acessar agora e ver como ficou o blog](https://biacoelho.github.io/charlie-brown-blog-mobile-first)
 
 <br>
-
