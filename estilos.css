@@ -1,0 +1,55 @@
+/* variaveis */
+:root {
+    --primaria: ;
+    --secundaria: ;
+    --destaque: ;
+    --texto: ;
+}
+
+/* reset */
+* {
+    line-height: 1.4;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo Base */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.redes-sociais-bia img {
+    width: 40px;
+}
+
+/* fonts */
+
+/* Estilo Mobile */
+
+/* .grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+} */
+
+/* Estilo Tablet */
+@media (min-width: 620px) {
+
+}
+
+/* Estilo Laptop */
+@media (min-width: 960px) {
+
+}
+
+/* Estilo Desktop */
+@media (min-width: 1200px) {
+
+}
