@@ -5,22 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./estilos.css">
-    <title>Tributo Blog | Sobre</title>
+    <title>Sobre | Tributo Blog </title>
 </head>
 
 <body>
+    <nav class="top-nav grid">
+        <ul>
+            <li><a href="./index.html" class="button">Início</a></li>
+        </ul>
+    </nav>
     <!-- HEADER -->
-    <header id="header" grid>
-        <h1>Sobre</h1>
-        <div class="frase-chorao">
-            <p>"Meu estilo de vida liberta a minha mente, sou completamente louco mas um louco consciente."</p>
-            <h2>Chorão</h2>
+    <header id="header">
+        <div class="">
+            <h1>Tributo Blog</h1>
+            <div class="decoracao"></div>
+            <h2>Sobre</h2>
+            <div class="decoracao"></div>
         </div>
-        <nav class="top-nav grid">
-            <ul>
-                <li><a href="./index.html" class="button">Início</a></li>
-            </ul>
-        </nav>
+        <div class="frase-chorao grid">
+            <blockquote>
+                "Meu estilo de vida liberta a minha mente, sou completamente louco mas um louco consciente."
+                <cite>- Chorão -</cite>
+            </blockquote>
+        </div>
     </header>
 
     <!-- MAIN -->
@@ -28,30 +35,47 @@
         <section id="sobre">
             <div class="sobre-mim grid">
                 <div class="img-sobre">
-                    <img src="./_img/b-profile.jpg" alt="foto de Bia Coelho">
+                    <img src="./assets/b-profile.jpg" alt="foto de Bia Coelho">
                     <p>Bia Coelho</p>
                 </div>
                 <p>
-                    Sou fã de Rock e estudante de <em>Análise e Desenvolvimento de Sistemas - <a href="https://fatecmogidascruzes.com.br/" target="_blank">Fatec Mogi das Cruzes</a>.</em>
+                    Sou estudante de <em>Análise e Desenvolvimento de Sistemas - <a href="https://fatecmogidascruzes.com.br/" target="_blank" title="site da faculdade fatec mogi das cruzes">Fatec Mogi das Cruzes</a>. Sou fã de Rock e por isso surgiu a ideia de falar sobre a banda Charlie Brown Jr.</em>
                     Criei esse blog para treinar meus conhecimentos de HMTL5/CSS3.
                 </p>
             </div>
         </section>
 
         <div class="frase-chorao grid">
-            <p>"Eu tenho uma alma que é feita de sonhos."</p>
-            <h3>Chorão</h3>
+            <blockquote>
+                "A vida me ensinou a nunca desistir. Nem ganhar, nem perder mas procurar evoluir."
+                <cite>- Chorão -</cite>
+            </blockquote>
         </div>
     </main>
+    
 
     <!-- FOOTER -->
     <footer id="footer">
+        <a href="./index.html" class="button">Início</a>
         <h4>Contato</h4>
-        <div class="redes-sociais-bia">
-            <a href="https://www.github.com/biacoelho" target="_blank"><img src="./_img/github.svg" alt="github da bia"></a>
-            <a href="https://www.linkedin.com/in/biacoelho" target="_blank"><img src="./_img/linkedin.svg" alt="linkedin da bia"></a>
+        <ul class="redes-sociais-bia">
+            <li>
+                <a href="https://www.github.com/biacoelho" target="_blank"><img src="./assets/github.svg"
+                        alt="github da bia"></a>
+                <h5 title="acessar portfólio da bia coelho">Portfólio</h5>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/biacoelho" target="_blank"><img src="./assets/linkedin.svg"
+                        alt="linkedin da bia"></a>
+                <h5 title="acessar linkedin da bia coelho">Linkedin</h5>
+            </li>
+        </ul>
+        <div class="subir-topo">
+            <a href="#header">
+                <p>▲</p>Subir
+            </a>
         </div>
-        Feito com &hearts; por Bia Coelho - 2020
+        <h5>Feito com &hearts; por Bia Coelho</h5>
     </footer>
 </body>
 
