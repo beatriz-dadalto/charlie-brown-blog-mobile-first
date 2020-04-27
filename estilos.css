@@ -152,7 +152,7 @@ a {
 }
 
 .redes-cbjr ul {
-    grid-column: 4/6;
+    grid-column: 3/7;
 }
 
 .redes-cbjr ul li {
@@ -163,7 +163,7 @@ a {
 }
 
 .discografia {
-    margin-bottom: 40px;
+    margin: 0 10px 40px 10px;
 }
 
 .discografia h3 {
@@ -175,6 +175,14 @@ a {
 .albuns a {
     grid-column: span 4;
     text-align: center;
+}
+
+.albuns a h4:nth-child(2) {
+    margin-top: 10px;
+}
+
+.albuns a h4:last-child {
+    margin-bottom: 20px;
 }
 
 .albuns img {
@@ -237,6 +245,7 @@ a {
 
 .subir-topo {
     margin-bottom: 8px;
+    margin-right: 10px;
     width: 100%;
 }
 
@@ -278,16 +287,58 @@ a {
 
 /* NOTE - Estilo 600px */
 @media screen and (min-width: 600px) {
+    
+    .redes-cbjr ul {
+        grid-column: 4/6;
+    }
 
+}
+
+@media screen and (min-width: 768px) {
+    
+    #sobre {
+        padding-left: 30px;
+    }
+    
+    .img-sobre img {
+        width: 200px;
+        margin-bottom: -30px;
+    }
+    
+    .sobre-mim p {
+        padding-top: 40px;
+    }
+
+    .discografia h3 {
+        font-size: 1.8em;
+        padding: 30px 0 70px 0;
+    }
+    
+    .albuns img {
+        width: 300px;
+    }
 
 }
 
 /* NOTE - Estilo Laptop */
 @media (min-width: 960px) {
 
+    body {
+        font-size: 18px;
+    }
+
+    .grid {
+        width: 100%;
+        max-width: 1060px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
 }
 
 /* NOTE - Estilo Desktop */
 @media (min-width: 1200px) {
-
+    
+    body {
+        font-size: 20px;
+    }
 }
