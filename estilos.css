@@ -8,6 +8,7 @@
 }
 
 /* reset */
+
 * {
     line-height: 1.4;
     text-decoration: none;
@@ -21,15 +22,14 @@ img {
     height: auto;
 }
 
-/* Estilo Base */
+/* Estilo Padrão */
 
 /************
-NOTE  GRID
+    GRID
 *************/
-
 .grid {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(10, 1fr);
     gap: 10px;
 }
 
@@ -41,6 +41,7 @@ body {
 }
 
 /* fonts */
+
 h1,h2,h3,h4 {
     color: var(--titulo);
 }
@@ -57,10 +58,11 @@ a {
     background-color: none;
     border: 2px solid var(--destaque);
     border-radius: 8px;
-    padding: 6px 12px;
+    padding: 8px 0;
     text-transform: uppercase;
     box-shadow: 1px 2px 3px rgba(0,0,0,.6);
     display: inline-block;
+    text-align: center;
 }
 
 .button:hover {
@@ -76,7 +78,7 @@ a {
     color: #222;
 }
 
-/* NOTE - Estilo 320px */
+/* Mobile First - Estilo 320px */
 
 #header .intro {
     display: flex;
@@ -109,7 +111,7 @@ a {
 }
 
 .frase-chorao blockquote, .frase-chorao cite{
-    grid-column: 1/9;
+    grid-column: 1/11;
     text-align: center;
     font-style: italic;
 }
@@ -127,7 +129,7 @@ a {
 }
 
 .bio figure {
-    grid-column: 1/9;
+    grid-column: 1/11;
     margin-bottom: 20px;
     overflow: hidden;
     max-width: 100%;
@@ -139,7 +141,7 @@ a {
 
 .bio p{
     margin: 0 10px;
-    grid-column: 1/9;
+    grid-column: 1/11;
 }
 
 .bio p:last-child {
@@ -153,12 +155,11 @@ a {
 }
 
 .redes-cbjr ul {
-    grid-column: 3/7;
+    grid-column: 4/8;
 }
 
 .redes-cbjr ul li {
     list-style-type: none;
-    text-align: center;
     width: 100%;
     margin: 10px 0;
 }
@@ -174,7 +175,7 @@ a {
 }
 
 .albuns a {
-    grid-column: span 4;
+    grid-column: span 5;
     text-align: center;
 }
 
@@ -251,7 +252,7 @@ a {
 }
 
 .subir-topo a, .subir-topo p{
-    grid-column: 8/9;
+    grid-column: 10/11;
     text-align: center;
     font-weight: bold;
 }
@@ -266,7 +267,7 @@ a {
     color: var(--texto);
 }
 
-/* Sobre */
+/* Pagina Sobre */
 
 #sobre {
     padding: 80px 10px 40px 10px;
@@ -282,15 +283,48 @@ a {
 }
 
 .sobre-mim p {
-    grid-column: span 5;
+    grid-column: span 7;
     padding-left: 5px;
 }
 
-/* NOTE - Estilo 600px */
+/* Media Queries */
+
 @media screen and (min-width: 600px) {
     
     .redes-cbjr ul {
-        grid-column: 4/6;
+        grid-column: 4/8;
+    }
+
+    .albuns img {
+        width: 230px;
+    }
+}
+
+@media screen and (min-width: 640px) {
+
+    .frase-chorao blockquote, .frase-chorao cite{
+        grid-column: 2/10;
+    }
+
+    .bio p{
+        grid-column: 2/10;
+    }
+
+    .albuns img {
+        width: 250px;
+    }
+
+    .sobre-mim .img-sobre {
+        grid-column: span 2/4;
+    }
+    
+    .img-sobre img {
+        border-radius: 50%;
+    }
+    
+    .sobre-mim p {
+        grid-column: span 6;
+        padding-left: 5px;
     }
 
 }
@@ -321,6 +355,14 @@ a {
 
 }
 
+@media screen and (min-width: 800px) {
+
+    .bio p{
+        grid-column: 2/10;
+    }
+
+}
+
 @media screen and (min-width: 1024px) {
 
     body {
@@ -346,7 +388,6 @@ a {
 
 }
 
-/* NOTE - Estilo 1280px */
 @media (min-width: 1280px) {
 
     body {
@@ -358,7 +399,7 @@ a {
     }
 
     .bio p{
-        grid-column: 2/8;
+        grid-column: 2/10;
     }
 
     .discografia h3 {
@@ -375,13 +416,11 @@ a {
     }
     
     .sobre-mim p {
-        grid-column: span 4/8;
+        grid-column: span 6/10;
     }
-
 
 }
 
-/* NOTE - Estilo 1440px */
 @media (min-width: 1440px) {
     
     body {
@@ -390,8 +429,47 @@ a {
 
     .grid {
         width: 100%;
-        max-width: 1080px;
+        /* max-width: 1080px; */
+        grid-template-columns: repeat(9, 1fr);
         margin: 0 auto;
         box-sizing: border-box;
     }
+
+    .bio p{
+        grid-column: 2/9;
+    }
+
+    .frase-chorao blockquote, .frase-chorao cite{
+        grid-column: 1/11;
+    }
+
+    .redes-cbjr ul {
+        grid-column: 4/7;
+    }
+
+    .discografia {
+        margin: 0 10px 40px 10px;
+    }
+    
+    .albuns a {
+        grid-column: span 3;
+        text-align: center;
+    }
+    
+    .albuns img {
+        width: 380px;
+    }
+
+    .sobre-mim .img-sobre {
+        grid-column: span 2/4;
+    }
+    
+    .sobre-mim p {
+        grid-column: span 5/9;
+    }
+
+    .subir-topo a, .subir-topo p{
+        grid-column: 9/10;
+    }
+
 }
