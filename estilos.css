@@ -290,9 +290,17 @@ a {
 /* Media Queries */
 
 @media screen and (min-width: 600px) {
+
+    .frase-chorao blockquote, .frase-chorao cite{
+        grid-column: 2/10;
+    }
     
     .redes-cbjr ul {
         grid-column: 4/8;
+    }
+
+    .redes-cbjr ul {
+        grid-column: 5/7;
     }
 
     .albuns img {
@@ -303,11 +311,15 @@ a {
 @media screen and (min-width: 640px) {
 
     .frase-chorao blockquote, .frase-chorao cite{
-        grid-column: 2/10;
+        grid-column: 3/9;
     }
 
     .bio p{
         grid-column: 2/10;
+    }
+
+    .redes-cbjr ul {
+        grid-column: 5/7;
     }
 
     .albuns img {
@@ -341,7 +353,7 @@ a {
     }
     
     .sobre-mim p {
-        padding-top: 40px;
+        padding-top: 20px;
     }
 
     .discografia h3 {
@@ -368,18 +380,22 @@ a {
     body {
         font-size: 18px;
     }
+
+    .frase-chorao blockquote, .frase-chorao cite{
+        grid-column: 4/8;
+    }
     
     .sobre-mim .img-sobre {
-        grid-column: span 2;
+        grid-column: span 2/4;
     }
     
     .sobre-mim p {
-        grid-column: span 6;
+        grid-column: span 6/10;
     }
 
     .discografia h3 {
         font-size: 1.8em;
-        padding: 70px 0 70px 0;
+        padding: 70px 0 80px 0;
     }
     
     .albuns img {
@@ -402,6 +418,10 @@ a {
         grid-column: 2/10;
     }
 
+    .redes-cbjr ul {
+        grid-column: 5/7;
+    }
+
     .discografia h3 {
         font-size: 2em;
         padding: 80px 0 90px 0;
@@ -417,6 +437,7 @@ a {
     
     .sobre-mim p {
         grid-column: span 6/10;
+        padding-top: 40px;
     }
 
 }
@@ -444,7 +465,7 @@ a {
     }
 
     .redes-cbjr ul {
-        grid-column: 4/7;
+        grid-column: 5/6;
     }
 
     .discografia {
