@@ -130,6 +130,7 @@ a {
     grid-column: 1/9;
     margin-bottom: 20px;
     overflow: hidden;
+    max-width: 100%;
 }
 
 .bio figure figcaption {
@@ -321,6 +322,10 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
+
+    body {
+        font-size: 18px;
+    }
     
     .sobre-mim .img-sobre {
         grid-column: span 2;
@@ -341,25 +346,52 @@ a {
 
 }
 
-/* NOTE - Estilo Laptop */
-@media (min-width: 960px) {
+/* NOTE - Estilo 1280px */
+@media (min-width: 1280px) {
 
     body {
-        font-size: 18px;
+        font-size: 20px;
+    }
+
+    .bio figure img {
+        width: 100%;
+    }
+
+    .bio p{
+        grid-column: 2/8;
+    }
+
+    .discografia h3 {
+        font-size: 2em;
+        padding: 80px 0 90px 0;
+    }
+    
+    .albuns img {
+        width: 480px;
+    }
+
+    .sobre-mim .img-sobre {
+        grid-column: span 2/4;
+    }
+    
+    .sobre-mim p {
+        grid-column: span 4/8;
+    }
+
+
+}
+
+/* NOTE - Estilo 1440px */
+@media (min-width: 1440px) {
+    
+    body {
+        font-size: 22px;
     }
 
     .grid {
         width: 100%;
-        max-width: 1060px;
+        max-width: 1080px;
         margin: 0 auto;
         box-sizing: border-box;
-    }
-}
-
-/* NOTE - Estilo Desktop */
-@media (min-width: 1200px) {
-    
-    body {
-        font-size: 20px;
     }
 }
