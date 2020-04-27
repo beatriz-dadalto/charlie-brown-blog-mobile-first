@@ -105,7 +105,7 @@ a {
 
 .frase-chorao {
     background-color: var(--secundaria);
-    padding: 40px 0 40px 0;
+    padding: 40px 10px 40px 10px;
 }
 
 .frase-chorao blockquote, .frase-chorao cite{
@@ -259,7 +259,7 @@ a {
 /* Sobre */
 
 #sobre {
-    padding: 80px 5px 40px 5px;
+    padding: 80px 10px 40px 10px;
 }
 
 .sobre-mim .img-sobre {
@@ -273,6 +273,7 @@ a {
 
 .sobre-mim p {
     grid-column: span 5;
+    padding-left: 5px;
 }
 
 /* NOTE - Estilo 600px */
