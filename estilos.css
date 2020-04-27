@@ -144,10 +144,6 @@ a {
     grid-column: 1/11;
 }
 
-.bio p:last-child {
-    margin-top: 20px;
-}
-
 .redes-cbjr {
     margin-bottom: 40px;
     background-color: var(--secundaria);
@@ -292,7 +288,7 @@ a {
 @media screen and (min-width: 600px) {
 
     .frase-chorao blockquote, .frase-chorao cite{
-        grid-column: 2/10;
+        grid-column: 3/9;
     }
     
     .redes-cbjr ul {
@@ -304,8 +300,18 @@ a {
     }
 
     .albuns img {
-        width: 230px;
+        width: 180px;
     }
+
+    .sobre-mim .img-sobre {
+        grid-column: span 2/4;
+    }
+    
+    .sobre-mim p {
+        grid-column: span 6;
+        padding-left: 5px;
+    }
+
 }
 
 @media screen and (min-width: 640px) {
@@ -322,55 +328,83 @@ a {
         grid-column: 5/7;
     }
 
-    .albuns img {
-        width: 250px;
-    }
-
-    .sobre-mim .img-sobre {
-        grid-column: span 2/4;
-    }
-    
-    .img-sobre img {
-        border-radius: 50%;
-    }
-    
-    .sobre-mim p {
-        grid-column: span 6;
-        padding-left: 5px;
+    .albuns a h4 {
+        padding: 0 60px;
     }
 
 }
 
 @media screen and (min-width: 768px) {
-    
-    #sobre {
-        padding-left: 30px;
+
+    .grid {
+        width: 100%;
+        grid-template-columns: repeat(12, 1fr);
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .bio {
+        padding-top: 70px;
+    }
+
+    .bio figure {
+        grid-column: 2/6;
+    }
+
+    .bio p {
+        grid-column: 6/12;
+    }
+
+    .frase-chorao blockquote, .frase-chorao cite{
+        grid-column: 4/10;
+    }
+
+    .redes-cbjr ul {
+        grid-column: 6/8;
+    }
+
+    .albuns img {
+        width: 200px;
+    }
+
+    .albuns a {
+        grid-column: span 4;
+        text-align: center;
+    }
+
+    .albuns a h4 {
+        padding: 0 40px;
     }
     
-    .img-sobre img {
-        width: 200px;
-        margin-bottom: -30px;
+    .sobre-mim .img-sobre {
+        grid-column: span 2/4;
     }
     
     .sobre-mim p {
-        padding-top: 20px;
+        grid-column: span 8/12;
+        padding-top: 12px;
+    }
+
+    .img-sobre img {
+        width: 200px;
+    }
+
+    .img-sobre p {
+        padding: 0 0;
+        margin: 0 0;
     }
 
     .discografia h3 {
         font-size: 1.8em;
-        padding: 30px 0 70px 0;
-    }
-    
-    .albuns img {
-        width: 300px;
+        padding: 70px 0 80px 0;
     }
 
-}
+    #footer > h5 {
+        margin-top: 15px;
+    }
 
-@media screen and (min-width: 800px) {
-
-    .bio p{
-        grid-column: 2/10;
+    .subir-topo a, .subir-topo p{
+        grid-column: 12/13;
     }
 
 }
@@ -381,25 +415,16 @@ a {
         font-size: 18px;
     }
 
-    .frase-chorao blockquote, .frase-chorao cite{
-        grid-column: 4/8;
-    }
-    
-    .sobre-mim .img-sobre {
-        grid-column: span 2/4;
-    }
-    
     .sobre-mim p {
-        grid-column: span 6/10;
+        padding-top: 20px;
     }
 
-    .discografia h3 {
-        font-size: 1.8em;
-        padding: 70px 0 80px 0;
+    .sobre-mim .img-sobre p {
+        padding: 0 0;
     }
-    
-    .albuns img {
-        width: 380px;
+
+    #footer > h5 {
+        margin-top: 10px;
     }
 
 }
@@ -410,87 +435,38 @@ a {
         font-size: 20px;
     }
 
-    .bio figure img {
-        width: 100%;
-    }
-
-    .bio p{
-        grid-column: 2/10;
-    }
-
-    .redes-cbjr ul {
-        grid-column: 5/7;
-    }
-
     .discografia h3 {
-        font-size: 2em;
-        padding: 80px 0 90px 0;
+        font-size: 2.2em;
     }
-    
-    .albuns img {
-        width: 480px;
+
+    .albuns a h4 {
+        padding: 0 80px;
     }
 
     .sobre-mim .img-sobre {
-        grid-column: span 2/4;
+        grid-column: span 4/6;
+        grid-row: 1;
     }
     
     .sobre-mim p {
-        grid-column: span 6/10;
-        padding-top: 40px;
+        grid-column: span 7/12;
+        grid-row: 1;
+        padding-top: 50px;
     }
 
+    .redes-sociais-bia img, .redes-sociais-bia li {
+        padding: 10px 10px;
+    }
+
+    .img-sobre p {
+        padding: 0 0;
+    }
 }
 
 @media (min-width: 1440px) {
     
     body {
         font-size: 22px;
-    }
-
-    .grid {
-        width: 100%;
-        /* max-width: 1080px; */
-        grid-template-columns: repeat(9, 1fr);
-        margin: 0 auto;
-        box-sizing: border-box;
-    }
-
-    .bio p{
-        grid-column: 2/9;
-    }
-
-    .frase-chorao blockquote, .frase-chorao cite{
-        grid-column: 1/11;
-    }
-
-    .redes-cbjr ul {
-        grid-column: 5/6;
-    }
-
-    .discografia {
-        margin: 0 10px 40px 10px;
-    }
-    
-    .albuns a {
-        grid-column: span 3;
-        text-align: center;
-    }
-    
-    .albuns img {
-        width: 380px;
-    }
-
-    .sobre-mim .img-sobre {
-        grid-column: span 2/4;
-    }
-    
-    .sobre-mim p {
-        grid-column: span 5/9;
-    }
-
-    .subir-topo a, .subir-topo p{
-        grid-column: 9/10;
     }
 
 }
