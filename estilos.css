@@ -320,6 +320,27 @@ a {
 
 }
 
+@media screen and (min-width: 1024px) {
+    
+    .sobre-mim .img-sobre {
+        grid-column: span 2;
+    }
+    
+    .sobre-mim p {
+        grid-column: span 6;
+    }
+
+    .discografia h3 {
+        font-size: 1.8em;
+        padding: 70px 0 70px 0;
+    }
+    
+    .albuns img {
+        width: 380px;
+    }
+
+}
+
 /* NOTE - Estilo Laptop */
 @media (min-width: 960px) {
 
