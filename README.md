@@ -20,6 +20,6 @@
 
 <br>
 
-[Quero acessar agora e ver como ficou o blog](https://biacoelho.github.io/charlie-brown-blog-mobile-first)
+[Quero acessar agora e ver como ficou o blog](https://beatrizdalto.github.io/charlie-brown-blog-mobile-first)
 
 <br>
